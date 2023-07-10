@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(200deg, rgb(250, 249, 234), rgb(233, 199, 219));
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-theme {
+    /* display: flex;
+    flex-direction: column; */
+    width: 100%;
+    max-width: 540px;
+    background: rgba(245, 245, 245, 0.757);
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.todo-theme h1 {
+    color: rgb(113, 0, 119);
+    display: flex;
+    align-items: center;
+}
+
+#todoForm {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(222, 221, 221);
+    border: 1px solid rgb(113, 0, 119);
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+input {
+    font-family: monospace;
+    border: none;
+    outline: none;
+    background-color: rgb(221, 221, 221);
+    padding: 10px;
+    color: rgb(113, 0, 119);
+    font-size: 16px;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 16px 40px;
+    background: #710077;
+    color: whitesmoke;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+ul li {
+    color: rgb(94, 94, 94);
+    letter-spacing: 1px;
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-image: url(pic/Unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px
+}
+
+ul li.checked {
+    color: #710077;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url(pic/Checked.png);
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #710077;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover {
+    background: #710077;
+    color: whitesmoke;
+}

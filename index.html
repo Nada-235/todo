@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Todo List</title>
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
   <div class="container">
-    <h1>Todo List</h1>
-    <form id="todoForm">
-      <input type="text" id="todoInput" placeholder="Enter a task">
-      <button type="submit">Add</button>
-    </form>
-    <ul id="todoList"></ul>
+    <div class="todo-theme">
+      <h1>To-do List🐥 </h1>
+      <br>
+      <div id="todoForm">
+        <input type="text" id="todoInput" placeholder="Enter a task">
+        <button type="submit" onclick="addTask()" > Add </button>
+      </div>
+      <ul id="todoList">
+      </ul>
+    </div>
   </div>
 
   <script src="script.js"></script>
 </body>
+
 </html>
